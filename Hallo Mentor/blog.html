@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <meta name ="viewport" content="with=device-width, initial scale=1.0">
+    <title>Hallo Mentor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <h1><a href="index.html">HALLO MENTOR</a></h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HALAMAN UTAMA</a></li>
+                    <li><a href="about.html">TENTANG KAMI</a></li>
+                    <li><a href="course.html">KURSUS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">HUBUNGI KAMI</a></li>
+                    <a href="sign.html"><img src="images/sign.png"></a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs For 2021</h1>
+    </section>
+
+<!----- Blog Page Content ----->
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/certificate.jpg">
+            <h2>Our Certificate & Online Programs For 2021</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis sapiente molestias totam assumenda eius dolore, quo dignissimos saepe quis inventore mollitia adipisci a deserunt incidunt molestiae magni in vero doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad sed mollitia neque expedita velit possimus tempora deleniti cupiditate quae aspernatur nemo facilis, distinctio earum nobis. Quisquam, debitis. Et, harum quaerat? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim ea voluptatum ipsum tenetur doloribus praesentium officiis rerum eius vero et dicta veniam ducimus nobis, vitae ab odio provident. Tempore, sed. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam similique quidem distinctio rerum deleniti voluptatibus suscipit quaerat, tempore quam incidunt, magnam nostrum aliquid illo voluptatem at doloribus. Placeat, numquam vitae.</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo placeat sint esse natus sit, nisi eius ratione voluptatem ex error ut totam reiciendis ipsam commodi molestiae corrupti obcaecati minima deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt minus odit aliquam, delectus omnis cupiditate aperiam doloribus animi suscipit eaque incidunt dignissimos mollitia molestias enim reiciendis exercitationem earum? Sapiente, voluptate.</p>
+            <br>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus modi amet adipisci consequatur odit, cumque et rem nam minima, dolore accusamus tempore sapiente pariatur quisquam laborum commodi sint, dolorem ut. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+            <div class="comment-box">
+                <h3>Tinggalkan Komentar</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="text" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Kirim Komentar</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!----- Footer ----->
+
+<section class="footer">
+    <h4>Tentang Kami</h4>
+    <p>We dedicated ourselves to share knowledge to others</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+
+
+
+
+
+<!-----JavaScript for Toggle Menu----->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>

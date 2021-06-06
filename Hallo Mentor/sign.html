@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <meta name ="viewport" content="with=device-width, initial scale=1.0">
+    <title>Hallo Mentor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <h1><a href="index.html">HALLO MENTOR</a></h1>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HALAMAN UTAMA</a></li>
+                    <li><a href="about.html">TENTANG KAMI</a></li>
+                    <li><a href="course.html">KURSUS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">HUBUNGI KAMI</a></li>
+                    <a href="sign.html"><img src="images/sign.png"></a>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Daftar atau Masuk</h1>
+    </section>
+
+    <!-- daftar -->
+    <section>
+        <div class="contact-col">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your full name" required>
+                <input type="email" name="email" placeholder="Enter email address" required>
+                <input type="text" name="password" placeholder="Enter your password" required>
+                <input type="text" name="job" placeholder="Enter your job right now" required>
+                <button type="submit" class="hero-btn red-btn">Daftar</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+        <!-- masuk -->
+        <section>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="email" name="email" placeholder="Enter email address" required>
+                    <input type="text" name="password" placeholder="Enter your password" required>
+                    <button type="submit" class="hero-btn red-btn">Masuk</button>
+                </form>
+            </div>
+        </div>
+        </section>
+
+    <!----- Footer ----->
+
+<section class="footer">
+    <h4>Tentang Kami</h4>
+    <p>We dedicated ourselves to share knowledge to others</p>
+
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+</section>
+
+    
+<!-----JavaScript for Toggle Menu----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html>
